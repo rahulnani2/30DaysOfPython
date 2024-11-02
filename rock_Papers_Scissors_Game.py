@@ -34,10 +34,7 @@ def check_winner(player, computer):
       return ("Scissor cuts the paper ! Player Wins")
     else:
       return ("Rock smashes the scissors ! Player loses")
-    
-
-
-
+  
 choices = get_choices()
 winner = check_winner(choices["player"], choices["computer"])
 print(winner)

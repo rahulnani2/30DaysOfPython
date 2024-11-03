@@ -1,29 +1,61 @@
-Strings
-1. String Data Type in Python:
+Day04-30DaysOfPython 
 
-In Python, a string is a sequence of characters, enclosed within single (' '), double (" "), or triple (''' ''' or """ """) quotes.
-Strings are immutable, meaning you cannot change the characters within a string directly. Instead, you create new strings.
-You can access individual characters in a string using indexing, e.g., my_string[0] will give you the first character.
-Strings support various built-in methods, such as len(), upper(), lower(), strip(), replace(), and more, for manipulation.
+Strings 
+Data under single,double or triple quote are strings. There are different string methods and built-in functions to deal with string data types.
 
-2. String Manipulation and Formatting:
+letter = 'P'                # A string could be a single character or a bunch of texts
+print(len(letter))          # 1
+greeting = 'Hello, World!'  # String could be made using a single or double quote,"Hello, World!"
+print(greeting)             # Hello, World!
+print(len(greeting))        # 13
+sentence = "I hope you are enjoying 30 days of Python Challenge"
 
-Concatenation: You can combine strings using the + operator.
-Substrings: Use slicing to extract portions of a string, e.g., my_string[2:5] will extract characters from the 2nd to the 4th position.
-String interpolation: Python supports various ways to format strings, including f-strings (f"...{variable}..."), %-formatting ("%s %d" % ("string", 42)), and str.format().
-Escape sequences: Special characters like newline (\n), tab (\t), and others are represented using escape sequences.
-String methods: Python provides many built-in methods for string manipulation, such as split(), join(), and startswith().
+Multiline string is created by using triple single (''') or triple double ("""). See the example below 
+multiline_string= ''' Day04 of the 30 days python challenge
+                      Day04 is for learning strings '''
+multiline_string= """ Day04 of the 30 days python challenge
+                      Day04 is for learning strings """
+print(multiline_string)
 
-3. Regular Expression for Text Processing
-> Regular Expressions are a powerful tool for pattern matching and text processing 
-> The re module in Python is used for working with regular expressions 
-> Common meta chracters 
-    > . (any character)
-    > * (zero or more)
-    > + (one or more)
-    > ? (zero or one)
-    > [] (charcater class)
-    > | (OR)
-    > ^ (start of a line)
-> Examples of regex usage : matching emails, phone numbers, or extracting data from text
-> re module fucntions include re.match(), re.search(), re.findall(), and re.sub() for pattern matching and replacement.    
+String Concatenation 
+Two or more strings can be concatenated by using + operator in Python 
+first_name = "Peter"
+last_name = "Parker"
+space = " "
+full_name = first_name + space + last_name
+
+Escape Sequence in Python 
+In python \ followed by a character is an escape character in escape sequence 
+> \n : new line
+> \t : tab (8 spaces)
+> \\ : Back Slash
+> \' : Single quote(')
+> \" : Double Quote (")
+
+print('This is a backslash symbol (\\)') --> This is a backslash symbol (\)
+print('In every programming language it starts with \" Hello World ! \" ') -> In every programming language it starts with " Hello World !" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,5 @@
 from Deck import Deck
+from Card import Card
 class Hand:
     def __init__(self, dealer = False):
         self.cards =  []
@@ -9,5 +10,5 @@ class Hand:
         self.cards.extend(card_list)
 
 hand = Hand()
-hand.addcard(Deck.dealcards(2))
+hand.addcard(Deck.dealcards(Deck , 2))
 print(hand.cards[0])

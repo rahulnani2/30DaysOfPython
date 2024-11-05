@@ -1,6 +1,13 @@
-import random
-import Card
-import Hand
+import random 
+
+class Card:
+    def __init__(self, suit, rank):
+        self.suit = suit
+        self.rank = rank
+    def __str__(self):
+         return f"{self.rank['rank']}  of {self.suit}"
+
+
 class Deck:
 
     def __init__(self):
@@ -38,3 +45,24 @@ class Deck:
              card = self.cards.pop()
              cards_dealt.append(card)
         return cards_dealt
+
+    
+class Hand:
+    def __init__(self, dealer = False):
+        self.cards =  []
+        self.value =0 
+        self.dealer = dealer
+    
+    def addcard(self, card_list):
+        self.cards.extend(card_list)
+
+    def calculate_value(self):
+        self.value =0 
+        
+
+deck = Deck()
+deck.shufflecards()
+
+hand = Hand()
+hand.addcard(deck.dealcards(2))
+print(hand.cards[0],"\n",hand.cards[1])

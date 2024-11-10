@@ -1,6 +1,5 @@
 
-#  Contains Basi Operations on Tuples , Dictionaries , Sets
-
+#  Contains Basic Operations on Tuples , Dictionaries , Sets
 
 
 # Tuples Tutorials
@@ -14,7 +13,7 @@ from typing import Union
 
 print("\n Working with Tuples ")
 names = ("Rahul", "Sanjay", "Gopi", "Uday")
-#Navigating through tuples
+# Navigating through tuples
 names[-1]  #  access the last item of a tuple
 names.index("Uday")
 len(names)
@@ -30,6 +29,7 @@ print("\n")
 # Creating a new Dictionary
 
 print("\n Working with Dictionaries ")
+
 persons = {"name": "Rahul", "Age": 29, "color": "Red"}
 
 persons["Age"] = 35

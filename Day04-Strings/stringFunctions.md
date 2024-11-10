@@ -2,7 +2,7 @@
 isalpha() --> to check if a string contains only characters and is not empty 
 isalnum() --> to check if a string contains chracters or digits and is not empty 
 isdecimal() --> to check if a string contains digits and is not empty 
-lower() --> to get a lowercase version of a SyntaxWarning
+lower() --> to get a lowercase version of a string
 islower() --> to check if a string a lowercase
 upper() --> to get an uppercase version of a string 
 isupper() --> to check if a string is uppercase
